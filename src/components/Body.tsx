@@ -37,7 +37,7 @@ export default function Body() {
   };
 
   return (
-    <main className="w-screen h-full gap-y-2 py-4 font-cabin flex-col-reverse items-center justify-center md:flex-row bg-[#FF7F50] flex">
+    <main className="w-screen h-full gap-y-10 md:gap-y-2 py-12 md:py-5 font-cabin flex-col-reverse items-center justify-center md:flex-row bg-[#FF7F50] flex">
       <section className="w-full md:w-1/2 flex flex-col gap-y-5 justify-center items-center">
         <div>
           <p className="text-lg">
@@ -56,12 +56,12 @@ export default function Body() {
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="block w-96 rounded-md border-2 px-3.5 py-1.5 text-black bg-[#E37046] shadow-sm border-[#FFDAB9]  text-md sm:leading-6 outline-none placeholder:text-[#FFDAB9]"
+            className="block w-80 md:w-96 rounded-md border-2 px-3.5 py-1.5 text-black bg-[#E37046] shadow-sm border-[#FFDAB9]  text-md sm:leading-6 outline-none placeholder:text-[#FFDAB9]"
           ></textarea>
           {error && <p className="text-red-500">{error}</p>}
           <button
             type="submit"
-            className="block px-4 py-2 text-md font-bold w-96 border-2 border-[#FFDAB9] rounded-lg text-[#FF7F50] bg-[#FFDAB9] transition-all"
+            className="block px-4 py-2 text-md font-bold w-80 md:w-96 border-2 border-[#FFDAB9] rounded-lg text-[#FF7F50] bg-[#FFDAB9] transition-all"
           >
             Send
           </button>
