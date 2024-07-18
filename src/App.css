@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+
+.font-cabin {
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-playwrite-dk-uloopet {
+  font-family: "Playwrite DK Uloopet", cursive;
+}
+
+textarea {
+  resize: none !important;
+}
+
+/* Custom scrollbar styling for WebKit browsers */
+textarea::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #fef08a; /* Color of the track */
+  border-radius: 4px}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #ca8a04; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+  cursor: default;
+}
