@@ -20,8 +20,8 @@ const navigation = [
   { name: "HBD", modalKey: null, current: true },
   { name: "Maria", modalKey: "maria", current: false },
   { name: "Mauno", modalKey: "mauno", current: false },
-  { name: "Pedro", modalKey: "pedro", current: false },
   { name: "Luzolo", modalKey: "luzolo", current: false },
+  { name: "Pedro", modalKey: "pedro", current: false },
 ];
 
 function classNames(
@@ -96,8 +96,9 @@ export default function Navbar() {
                   <Menu as="div" className="relative ml-3">
                     <div className="flex gap-2">
                       <button
-                      onClick={() => setOpen(true)}
-                    className="block px-4 py-2 text-md font-bold text-[#FFDAB9] border-2 border-[#FFDAB9] rounded-lg hover:text-[#FF7F50] hover:bg-[#FFDAB9] transition-all">
+                        onClick={() => setOpen(true)}
+                        className="block px-4 py-2 text-md font-bold text-[#FFDAB9] border-2 border-[#FFDAB9] rounded-lg hover:text-[#FF7F50] hover:bg-[#FFDAB9] transition-all"
+                      >
                         I hope u luv it
                       </button>
                     </div>

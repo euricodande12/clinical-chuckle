@@ -1,39 +1,40 @@
-import { useState } from 'react';
-import emailjs from 'emailjs-com';
-import { horizontalImage, verticalImage1, verticalImage2 } from '../assets';
+import { useState } from "react";
+import emailjs from "emailjs-com";
+import { horizontalImage, verticalImage1, verticalImage2 } from "../assets";
 
 export default function Body() {
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    if (message.trim() === '') {
-      setError('The message cannot be empty.');
+    if (message.trim() === "") {
+      setError("The message cannot be empty.");
       return;
     }
 
     const templateParams = {
       message,
-      to_email: 'cesaltinoquianvo@gmail.com',
+      to_email: "cesaltinoquianvo@gmail.com",
     };
 
-    emailjs.send(
-      'service_c21kskl', // replace with your EmailJS service ID
-      'template_yl16gf7', // replace with your EmailJS template ID
-      templateParams,
-      'BQoy3ajZEaf5O6TSB' // replace with your EmailJS user ID
-    )
-    .then((response) => {
-      console.log('Email sent successfully!', response.status, response.text);
-      setMessage('');
-      setError('');
-    })
-    .catch((err) => {
-      console.error('Failed to send email:', err);
-      setError('Failed to send email. Please try again later.');
-    });
+    emailjs
+      .send(
+        "service_c21kskl", // replace with your EmailJS service ID
+        "template_yl16gf7", // replace with your EmailJS template ID
+        templateParams,
+        "BQoy3ajZEaf5O6TSB" // replace with your EmailJS user ID
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        setMessage("");
+        setError("");
+      })
+      .catch((err) => {
+        console.error("Failed to send email:", err);
+        setError("Failed to send email. Please try again later.");
+      });
   };
 
   return (
@@ -47,7 +48,10 @@ export default function Body() {
           </p>
           <p className="font-playwrite-dk-uloopet text-sm">Rubem Alves</p>
         </div>
-        <form onSubmit={sendEmail} className="w-full flex flex-col gap-y-2 justify-center items-center">
+        <form
+          onSubmit={sendEmail}
+          className="w-full flex flex-col gap-y-2 justify-center items-center"
+        >
           <textarea
             id="message"
             draggable="false"

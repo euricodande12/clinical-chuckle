@@ -8,7 +8,7 @@ import {
 import ModalProps from "../interfaces/ModalProps.interface";
 import { maria } from "../assets";
 
-const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
+const IHopeULuvItModal: FC<ModalProps> = ({ open, setOpen }) => {
   const initialFocusRef = useRef(null);
 
   return (
@@ -19,15 +19,11 @@ const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
         onClose={setOpen}
         initialFocus={initialFocusRef}
       >
-        <DialogBackdrop
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-        />
+        <DialogBackdrop className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <DialogPanel
-              className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl"
-            >
+            <DialogPanel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl">
               <div className="bg-[#FFDAB9] px-4 pb-4 pt-3 md:pt-5 sm:p-6 sm:pb-4">
                 <DialogTitle
                   as="h2"
@@ -40,27 +36,27 @@ const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
                     <img src={maria} className="w-52 rounded-lg" alt="maria" />
                   </div>
                   <div className="mt-2 md:mt-4 w-full text-center">
-                      <p className="mb-5 text-lg">
+                    <p className="mb-5 text-lg">
                       Sentir primeiro, pensar depois <br />
                       Perdoar primeiro, julgar depois <br />
                       Amar primeiro, educar depois <br />
                       Esquecer primeiro, aprender depois
-                      </p>
-                      <p className="mb-5 text-lg">
+                    </p>
+                    <p className="mb-5 text-lg">
                       Libertar primeiro, ensinar depois <br />
                       Alimentar primeiro, cantar depois
-                      </p>
-                      <p className="mb-5 text-lg">
+                    </p>
+                    <p className="mb-5 text-lg">
                       Possuir primeiro, contemplar depois <br />
                       Agir primeiro, julgar depois
-                      </p>
-                      <p className="mb-5 text-lg">
+                    </p>
+                    <p className="mb-5 text-lg">
                       Navegar primeiro, aportar depois <br />
                       Viver primeiro, morrer depois
-                      </p>
-                      <p className="mb-5 font-playwrite-dk-uloopet text-sm">
+                    </p>
+                    <p className="mb-5 font-playwrite-dk-uloopet text-sm">
                       Paulo Roberto do Carmo
-                      </p>
+                    </p>
                   </div>
                 </section>
               </div>
@@ -79,7 +75,7 @@ const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
         </div>
       </Dialog>
     </>
-  )
-}
+  );
+};
 
 export default IHopeULuvItModal;
