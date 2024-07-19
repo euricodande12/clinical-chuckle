@@ -71,7 +71,7 @@ const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
                   onClick={() => setOpen(false)}
                   ref={initialFocusRef}
                 >
-                  Close modal
+                  Fechar
                 </button>
               </div>
             </DialogPanel>

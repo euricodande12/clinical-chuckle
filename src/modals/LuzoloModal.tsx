@@ -50,9 +50,9 @@ const LuzoloModal: FC<ModalProps>  = ({ open, setOpen }) => {
                       <p className="mb-5 text-lg">
                         {luzoloModalPs.p3}
                       </p>
-                      <p className="mb-5 font-playwrite-dk-uloopet underline text-lg">
+                      {/*<p className="mb-5 font-playwrite-dk-uloopet underline text-lg">
                         {luzoloModalPs.ps}
-                      </p>
+                      </p>*/}
                   </div>
                 </section>
               </div>
@@ -63,7 +63,7 @@ const LuzoloModal: FC<ModalProps>  = ({ open, setOpen }) => {
                   onClick={() => setOpen(false)}
                   ref={initialFocusRef}
                 >
-                  Close modal
+                  Fechar
                 </button>
               </div>
             </DialogPanel>
