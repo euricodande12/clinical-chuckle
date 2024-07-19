@@ -40,7 +40,7 @@ export default function Body() {
     <main className="w-screen h-full gap-y-10 md:gap-y-2 py-12 md:py-5 font-cabin flex-col-reverse items-center justify-center md:flex-row bg-[#FF7F50] flex">
       <section className="w-full md:w-1/2 flex flex-col gap-y-5 justify-center items-center">
         <div>
-          <p className="text-lg">
+          <p className="w-80 md:w-96 text-base md:text-lg">
             Amar é ter um pássaro pousado no dedo. <br />
             Quem tem um pássaro pousado no dedo sabe que, <br />
             a qualquer momento, ele pode voar. <br />
