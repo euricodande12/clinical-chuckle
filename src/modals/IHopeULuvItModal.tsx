@@ -33,7 +33,7 @@ const IHopeULuvItModal: FC<ModalProps>  = ({ open, setOpen }) => {
                   as="h2"
                   className="text-center text-lg font-playwrite-dk-uloopet md:text-2xl font-bold leading-6 mb-2 md:mb-0 text-gray-900"
                 >
-                  Maria Mauno Pedro Luzolo
+                  Maria Mauno Luzolo Pedro
                 </DialogTitle>
                 <section className="w-full flex flex-col gap-y-4 md:gap-y-0 justify-center items-center md:flex-row">
                   <div className="mt-2 md:mt-4 flex justify-center w-full">
